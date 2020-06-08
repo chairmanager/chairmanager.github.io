@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Task Manager</title>
+    
+    
+</head>
+<body>
+    <!--this is going the top of the webpage -->
+    <i>
+        <h1> Task Manager </h1>
+    </i>
+    <!--this is the body of the webpage-->
+
+    <!--label must populate here after Create List button has been pressed.-->
+    <main>
+        <div id="board">
+        <!--<i><p style="color: white; font-size:160%;"> Issues:</p></i>-->
+            <form>
+                <span>
+                    <label id="tabKey" value="0">Title:</label>
+                </span>  
+                <span>                             
+                    <input type= "text" id="tabName" placeholder="Enter Tab Name..">
+                    <input id="btnCTab" type="button" value="Create Tab">              
+                </span>
+                <div>
+                    <label id="tabOutput"></label>
+                </div>
+                
+                
+            </form>
+        </div>
+    </main>
+    
+    <!--The JS files we included-->
+    <script type="text/javascript" src="./javascript/index.js"></script>
+    <script type="text/javascript" src="./javascript/createTab.js"></script>
+    <script type="text/javascript" src="./javascript/addTask.js"></script>
+    <script type="text/javascript" src="./javascript/task.js"></script>
+    <script type="text/javascript" src="./javascript/removeTab.js"></script>
+    
+    <!--this is the bottom of the webpage-->
+    <footer></footer>
+</body>
+</html>

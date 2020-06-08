@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    color: white;
+    font-family:courier;
+    font-size: 200%;
+}
+
+body {
+    background-color: darkslategrey;
+}
+
+label {
+    color: white;
+    font-size: large;
+}
+
+#create-tab, #task-save, #task-delete {
+    text-align: center;
+    color: darkslategrey;
+    font-family:courier;
+    font-size: 100%;
+}
