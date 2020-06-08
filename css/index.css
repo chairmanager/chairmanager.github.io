@@ -20,3 +20,10 @@ label {
     font-family:courier;
     font-size: 100%;
 }
+
+.grid-container{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 200px 200px 200px;
+
+}

@@ -29,21 +29,29 @@
             var storedTasks = JSON.parse(tasks);
             console.log(storedTasks[0]);
 
-          
+            //storedTasks.sort();
+            console.log(storedTasks);
+
             tabOutput.innerHTML += `${titleKey}: 
             <input type= "text" id="t${i}" placeholder="Enter Task..">
             <button id=a${i} type=button>Create Task</button><br /> 
             -------Create More Tasks Here--------<br />
-            *${storedTasks[1]}<br />
-            *${storedTasks[2]}<br />
-            *${storedTasks[3]}<br />
-            *${storedTasks[4]}<br />
-            *${storedTasks[5]}<br />
-            *${storedTasks[6]}<br />
-            *${storedTasks[7]}<br />
-            <button id=d${i} type=button>Delete Tab</button><br />`;
+            *${storedTasks[1]}
+            <button id=r1${i} type=button>🗑️</button><br />
+            *${storedTasks[2]}
+            <button id=r2${i} type=button>🗑️</button><br />
+            *${storedTasks[3]}
+            <button id=r3${i} type=button>🗑️</button><br />
+            *${storedTasks[4]}
+            <button id=r4${i} type=button>🗑️</button><br />
+            *${storedTasks[5]}
+            <button id=r5${i} type=button>🗑️</button><br />
+            *${storedTasks[6]}
+            <button id=r6${i} type=button>🗑️</button><br />
+            *${storedTasks[7]}
+            <button id=r7${i} type=button>🗑️</button><br />
+            <button id=d${i} type=button>Delete Tab🗑️</button><br />`;
         
     }
     
-    console.log(document.getElementById("t1"));
     console.log(localStorage);
