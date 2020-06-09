@@ -33,7 +33,7 @@
             console.log(storedTasks[0]);
             console.log(storedTasks);
 
-            tabOutputTemp.innerHTML = `<div id="tabColumns">${titleKey}: 
+            tabOutputTemp.innerHTML = `<div class=column id="tabColumns">${titleKey}: 
             <input type= "text" id="t${i}" placeholder="Enter Task..">
             <button id=a${i} type=button>Create Task</button><br />
             -------Create More Tasks Here--------<br />
