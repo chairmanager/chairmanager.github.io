@@ -9,6 +9,7 @@
     const tabName = document.getElementById("tabName");
     const btnCTab = document.getElementById("btnCTab");
     const tabOutput = document.getElementById("tabOutput");
+    
 
     btnCTab.onclick = function() {
         var title = tabName.value;
@@ -26,15 +27,15 @@
             const titleKey = localStorage.key(i);
             const tasks = localStorage.getItem(titleKey);
 
+            tabOutputTemp = document.createElement("div");
+
             var storedTasks = JSON.parse(tasks);
             console.log(storedTasks[0]);
-
-            //storedTasks.sort();
             console.log(storedTasks);
 
-            tabOutput.innerHTML += `${titleKey}: 
+            tabOutputTemp.innerHTML = `<div id="tabColumns">${titleKey}: 
             <input type= "text" id="t${i}" placeholder="Enter Task..">
-            <button id=a${i} type=button>Create Task</button><br /> 
+            <button id=a${i} type=button>Create Task</button><br />
             -------Create More Tasks Here--------<br />
             *${storedTasks[1]}
             <button id=r1${i} type=button>🗑️</button><br />
@@ -50,7 +51,14 @@
             <button id=r6${i} type=button>🗑️</button><br />
             *${storedTasks[7]}
             <button id=r7${i} type=button>🗑️</button><br />
-            <button id=d${i} type=button>Delete Tab🗑️</button><br />`;
+            <button id=d${i} type=button>Delete Tab🗑️</button><br /> <br></div>`;
+
+            tabOutput.appendChild(tabOutputTemp); //so it can appear sideways
+
+            const sortTaskButton = document.getElementById("sortTaskButton");
+            sortTaskButton.onclick = function() { //if the sort button is clicked then it will sort the tasks
+                storedTasks.sort();
+            }
         
     }
     
