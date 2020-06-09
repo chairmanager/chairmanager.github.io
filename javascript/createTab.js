@@ -54,11 +54,6 @@
             <button id=d${i} type=button>Delete Tab🗑️</button><br /> <br></div>`;
 
             tabOutput.appendChild(tabOutputTemp); //so it can appear sideways
-
-            const sortTaskButton = document.getElementById("sortTaskButton");
-            sortTaskButton.onclick = function() { //if the sort button is clicked then it will sort the tasks
-                storedTasks.sort();
-            }
         
     }
     
